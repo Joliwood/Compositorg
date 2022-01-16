@@ -1,0 +1,105 @@
+.central-text {
+    text-align: center;
+}
+
+.main-text {
+    color: orangered;
+    border: 2px solid black;
+    margin: 20px auto 0px auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Le inline block me permets de créer un bloc mais à la différence du display inline seul, 
+je peux définir une hauteur et une largeur */
+
+.second-text {
+    margin-top: 5px;
+}
+
+
+.paragraphe {
+    color: green;
+}
+
+.classcolor {
+    color: red;
+}
+
+.basic-background {
+    background-color: wheat;
+    text-align: center;
+}
+
+.container {
+    width: 50vh;
+    background-color: whitesmoke;
+    margin: 0 20px 0 0;
+    display: inline-block;
+}
+
+.container2 {
+    width: 50vh;
+    background-color: thistle;
+    margin: 0 0 0 20px;
+    display: inline-block;
+}
+
+.flexbox-party {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 100px 0;
+    gap: 50px;
+}
+
+.flexbox-party__image {
+    border-bottom: 5px solid black;
+}
+
+.bloc1 {
+    flex: 2;
+    border: 5px solid black;
+}
+
+.bloc1__text {
+    color: green;
+
+}
+
+.bloc2 {
+    flex: 2;
+    border: 5px solid black;
+}
+
+.bloc3 {
+    flex: 2;
+    border: 5px solid black;
+}
+.excerpt {
+    color: blue;
+}
+
+#list-of-compositors {
+    width: 70%;
+    margin: 10px auto;
+}
+
+#list-of-compositors a {
+    background-color: darkgrey;
+    color: red;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px auto;
+    width: 70vh;
+    border-radius: 5px;
+    display: block;
+}
+
+#list-of-compositors a:hover {
+    color: yellow;
+    background-color: red;
+}
+
+.simple-list {
+    list-style-type: none;
+}
