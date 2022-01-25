@@ -76,6 +76,25 @@ je peux définir une hauteur et une largeur */
     flex: 2;
     border: 5px solid black;
 }
+
+.bloc4 {
+    width: 40vw;
+    background-color: lightblue;
+    border: 1px solid black;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.sendbutton {
+    font-size: 20px;
+    background: linear-gradient(90deg, green, lightgreen);
+}
+
+.sendbutton:hover {
+    background: linear-gradient(90deg, yellow, orange)
+}
+
 .excerpt {
     color: blue;
 }
@@ -102,4 +121,12 @@ je peux définir une hauteur et une largeur */
 
 .simple-list {
     list-style-type: none;
+}
+
+.goodanswer {
+    border: 2px solid green;
+}
+
+.wronganswer {
+    border: 2px solid red;
 }
