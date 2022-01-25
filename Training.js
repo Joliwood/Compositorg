@@ -77,7 +77,19 @@ let app2 = {
     // une fonction globale qui se déclenchera au clic sur l'envoie à l'équipe
         document.getElementById("sendbutton").addEventListener("click", () => {
     // une seconde boucle if (si l'userValue === azpoazpo21 alors le let compteur = 0, si c'est azpoazpo, let compteur = 1, else -> let compteur = 2)
+        if (bloc4text.value === respectText) {
+            nbErrors = 0;
+        } else if (bloc4text.value === "azpoazpo") {
+            nbErrors = 1;
+        } else {
+            nbErrors = 2;
+        }
     // une troisième boucle if (si c'est bon -> je sais pas encore, si c'est pas bon ça va créer une liste avec :)
+        if (nbErrors > 0) {
+        let newUlElement = document.createElement("ul");
+
+        newUlElement.innerHTML += "li"
+        }
     // compter le nombre d'erreurs, et créer une liste en fonction intégré dans le html entre le placeholder et le button
         })
 
