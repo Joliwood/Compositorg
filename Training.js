@@ -86,9 +86,22 @@ let app2 = {
         }
     // une troisième boucle if (si c'est bon -> je sais pas encore, si c'est pas bon ça va créer une liste avec :)
         if (nbErrors > 0) {
-        let newUlElement = document.createElement("ul");
 
-        newUlElement.innerHTML += "li"
+        let errorMessage = ""; 
+        let newUlElement = document.createElement("ul");
+        let errorElement = document.getElementById("errors");
+
+        if (nbErrors === 1) {
+            errorMessage = "Tu as oublié de mettre 21";
+        } else if (nbErrors === 2) {
+            errorMessage = "Tu fais pas d'efforts aussi...";
+        } else {
+            errorMessage = "Bravo, tu as créé un bug dans la matrice !";
+        }
+
+        errorElement.innerHTML = "";
+        newUlElement.innerHTML += "<li class='errors'>" + errorMessage + "</li>";
+        errorElement.appendChild(newUlElement);
         }
     // compter le nombre d'erreurs, et créer une liste en fonction intégré dans le html entre le placeholder et le button
         })

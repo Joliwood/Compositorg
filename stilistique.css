@@ -130,3 +130,7 @@ je peux définir une hauteur et une largeur */
 .wronganswer {
     border: 2px solid red;
 }
+
+.errors {
+    color: red;
+}
