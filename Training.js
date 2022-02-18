@@ -109,7 +109,91 @@ let app2 = {
     }
 }
 
+let app3 = {
 
+  init: function() {
+      
+    var map = {
+      models: {
+          squid: [
+              "XXXXXXXXX",
+              "XX-----XX",
+              "XX-8-8-XX",
+              "X-------X",
+              "XX-X-X-XX",
+              "X-xx-xx-X",
+              "XXXXXXXXX",
+          ],
+          crab: [
+              "---------",
+              "---X-X---",
+              "--XXXXX--",
+              "--XOXOX--",
+              "-XXXXXXX-",
+              "-X-X-X-X-",
+              "---------",
+          ],
+          space: [
+              "-----------",
+              "----X-X----",
+              "---XXXXX---",
+              "--XX-X-XX--",
+              "---xoxox---",
+              "--XXXXXXX--",
+              "-X-X---X-X-",
+              "----X-X----",
+              "-----------",
+          ],
+          ghost: [
+              "----------------",
+              "------OOOO------",
+              "----OOOOOOOO----",
+              "---OOOOOOOOOO---",
+              "--OOO--OOOO--O--",
+              "--OO----OO------",
+              "--OO--88OO--OO--",
+              "-OOO--88OO--88O-",
+              '-OOOO--OOOO--OO-',
+              "-OOOOOOOOOOOOOO-",
+              "-OOOOOOOOOOOOOO-",
+              "-OOOOOOOOOOOOOO-",
+              "-OOOOOOOOOOOOOO-",
+              "-OO-OOO--OOO-OO-",
+              "-O---OO--OO---O-",
+              "----------------",
+          ],
+          deadhead: [
+              "---------",
+              "-X-XXX-X-",
+              "--XXXXX--",
+              "--XOXOX--",
+              "--XXXXX--",
+              "-X-XXX-X-",
+              "---------",
+          ],
+          myth: [
+              "XXXXXXXXXXXXX",
+              "XXX-XXXXX-XXX",
+              "XXXX-XXX-XXXX",
+              "XXX-------XXX",
+              "X-----------X",
+              "X-X-------X-X",
+              "X-X-XXXXX-X-X",
+              "XXXX--X--XXXX",
+              "XXXXXXXXXXXXX",
+          ],
+        },
+         types: {
+             "-": "empty",
+             "X": "plain",
+             "O": "light",
+             "8": "highlight",
+         },
+    };
+}
 
-document.addEventListener("DOMContentLoaded", app2.init);
+}
+
 document.getElementById("guessnumbutton").addEventListener("click", app.init);
+document.addEventListener("DOMContentLoaded", app2.init);
+document.getElementById("spaceInvader").addEventListener("click", app3.init);
