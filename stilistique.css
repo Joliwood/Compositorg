@@ -28,8 +28,9 @@ je peux définir une hauteur et une largeur */
 }
 
 .basic-background {
-    background-color: wheat;
+    background-image: url("Background-03.jpg");
     text-align: center;
+    background-size: cover;
 }
 
 .container {
