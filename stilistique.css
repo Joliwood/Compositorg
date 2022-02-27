@@ -135,3 +135,24 @@ je peux définir une hauteur et une largeur */
 .errors {
     color: red;
 }
+
+.tab-content {
+    display: none;
+}
+
+.active {
+    display: block;
+    background-color: yellow;
+}
+
+li {
+    list-style: none;
+}
+
+.fixed {
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    background-image: url("Background-03.jpg");
+    background-size: cover;
+}

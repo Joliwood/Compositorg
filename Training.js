@@ -115,5 +115,42 @@ let app2 = {
     }
 }
 
+let selectorApp = function() {
+    
+    var tabs = document.querySelectorAll(".tabs a")
+    for (let i = 0; i < tabs.length; i++) {
+        tabs[i].addEventListener("click", function(e) {
+
+            if (this.parentNode.classList.contains("active")) {
+                return false;
+            }
+
+            var div = this.parentNode.parentNode.parentNode;
+
+            div.querySelector(".tabs .active").classList.remove("active");
+            this.parentNode.classList.add("active");
+
+            div.querySelector(".tab-content.active").classList.remove("active");
+            div.querySelector(this.getAttribute("href")).classList.add("active");
+
+            e.preventDefault();
+        })
+    }
+}()
+
+let scrollApp = function() {
+
+    let onscroll = function() {
+        let scrollStatus = document.querySelector(".central-text");
+        if (scrollStatus.getBoundingClientRect().top < 8) {
+            scrollStatus.classList.add("fixed");
+        } else {
+            scrollStatus.classList.remove("fixed");
+        };
+    } 
+    window.addEventListener("scroll", onscroll);
+
+}()
+
 document.getElementById("guessnumbutton").addEventListener("click", app.init);
 document.addEventListener("DOMContentLoaded", app2.init);
