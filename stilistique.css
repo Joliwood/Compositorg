@@ -1,5 +1,5 @@
 .central-text {
-    text-align: center;
+    position: relative;
 }
 
 .main-text {
@@ -28,6 +28,7 @@ je peux définir une hauteur et une largeur */
 }
 
 .basic-background {
+    margin: auto 8px 8px auto;
     background-image: url("Background-03.jpg");
     text-align: center;
     background-size: cover;
@@ -151,8 +152,8 @@ li {
 
 .fixed {
     position: fixed;
-    align-items: center;
     width: 100%;
     background-image: url("Background-03.jpg");
     background-size: cover;
+    border-bottom: 1px black solid;
 }

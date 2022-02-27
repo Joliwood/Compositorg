@@ -140,14 +140,17 @@ let selectorApp = function() {
 
 let scrollApp = function() {
 
-    let onscroll = function() {
-        let scrollStatus = document.querySelector(".central-text");
-        if (scrollStatus.getBoundingClientRect().top < 8) {
-            scrollStatus.classList.add("fixed");
+    let scrollStatus = document.querySelector(".central-text");
+    
+    function onscroll() {
+        
+        if (window.pageYOffset > 103){
+           scrollStatus.classList.add("fixed");
         } else {
-            scrollStatus.classList.remove("fixed");
+           scrollStatus.classList.remove("fixed");
         };
     } 
+
     window.addEventListener("scroll", onscroll);
 
 }()
